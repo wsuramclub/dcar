@@ -38,8 +38,8 @@ while True:
        with ControllerResource() as joystick:
            print(type(joystick).__name__)
            while joystick.connected:
-                joystick_value_lx = joystick_value['lx']
-                joystick_value_ry = joystick_value['ry']
+                joystick_value_lx = joystick['lx']
+                joystick_value_ry = joystick['ry']
 
                 desired_angle_lx = (joystick_value_lx+1)/2*180
 
